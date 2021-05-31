@@ -1,0 +1,1384 @@
+{
+  "contractName": "CardBoxConfig",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "CardBoxs",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "level",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint32",
+          "name": "exp",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint8",
+          "name": "addition",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "_level",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint32",
+          "name": "_exp",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint8",
+          "name": "_addition",
+          "type": "uint8"
+        }
+      ],
+      "name": "creatBox",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"CardBoxs\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"level\",\"type\":\"uint8\"},{\"internalType\":\"uint32\",\"name\":\"exp\",\"type\":\"uint32\"},{\"internalType\":\"uint8\",\"name\":\"addition\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_level\",\"type\":\"uint8\"},{\"internalType\":\"uint32\",\"name\":\"_exp\",\"type\":\"uint32\"},{\"internalType\":\"uint8\",\"name\":\"_addition\",\"type\":\"uint8\"}],\"name\":\"creatBox\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/Sol/ntf/contracts/CardBoxConfig.sol\":\"CardBoxConfig\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Sol/ntf/contracts/CardBoxConfig.sol\":{\"keccak256\":\"0xba14ce30f50aa7b4f514f64cecbd3f5bf86106200c4d9835f0d379db683fede5\",\"urls\":[\"bzz-raw://68b5fe121c5485894d2baba965f62e29ee54aaf283a11868cc228cd513ef8643\",\"dweb:/ipfs/QmZxrQVHur7MB2scjUsS1x5DFJpe1yakYExYKR8AehbG4A\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610254806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806322abcd001461003b5780639249c84f14610089575b600080fd5b6100876004803603606081101561005157600080fd5b81019080803560ff169060200190929190803563ffffffff169060200190929190803560ff1690602001909291905050506100f1565b005b6100b56004803603602081101561009f57600080fd5b8101908080359060200190929190505050610101565b604051808460ff1660ff1681526020018363ffffffff1663ffffffff1681526020018260ff1660ff168152602001935050505060405180910390f35b6100fc83838361015e565b505050565b6000818154811061010e57fe5b906000526020600020016000915090508060000160009054906101000a900460ff16908060000160019054906101000a900463ffffffff16908060000160059054906101000a900460ff16905083565b600060405180606001604052808560ff1681526020018463ffffffff1681526020018360ff1681525090806001815401808255809150509060018203906000526020600020016000909192909190915060008201518160000160006101000a81548160ff021916908360ff16021790555060208201518160000160016101000a81548163ffffffff021916908363ffffffff16021790555060408201518160000160056101000a81548160ff021916908360ff16021790555050505050505056fea265627a7a72315820a1defaa7c11f22a5fae3e3a6bed4dab789ac9e27b2bf55cc8e6ee3bd4cc8d50f64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806322abcd001461003b5780639249c84f14610089575b600080fd5b6100876004803603606081101561005157600080fd5b81019080803560ff169060200190929190803563ffffffff169060200190929190803560ff1690602001909291905050506100f1565b005b6100b56004803603602081101561009f57600080fd5b8101908080359060200190929190505050610101565b604051808460ff1660ff1681526020018363ffffffff1663ffffffff1681526020018260ff1660ff168152602001935050505060405180910390f35b6100fc83838361015e565b505050565b6000818154811061010e57fe5b906000526020600020016000915090508060000160009054906101000a900460ff16908060000160019054906101000a900463ffffffff16908060000160059054906101000a900460ff16905083565b600060405180606001604052808560ff1681526020018463ffffffff1681526020018360ff1681525090806001815401808255809150509060018203906000526020600020016000909192909190915060008201518160000160006101000a81548160ff021916908360ff16021790555060208201518160000160016101000a81548163ffffffff021916908363ffffffff16021790555060408201518160000160056101000a81548160ff021916908360ff16021790555050505050505056fea265627a7a72315820a1defaa7c11f22a5fae3e3a6bed4dab789ac9e27b2bf55cc8e6ee3bd4cc8d50f64736f6c63430005100032",
+  "sourceMap": "69:547:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:547:1;;;;;;;",
+  "deployedSourceMap": "69:547:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:547:1;;;;;;;;;;;;;;;;;;;;;;;;457:156;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;457:156:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;243:25;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;243:25:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;457:156;571:34;581:6;589:4;595:9;571;:34::i;:::-;457:156;;;:::o;243:25::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;277:172::-;394:8;408:32;;;;;;;;416:6;408:32;;;;;;424:4;408:32;;;;;;430:9;408:32;;;;;394:47;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;394:47:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;277:172;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract CardBoxConfig {\r\n    struct CardBox {\r\n        uint8 level; //开槽等级\r\n        uint32 exp; //升级所需经验\r\n        uint8 addition; //加成\r\n    }\r\n\r\n    CardBox[] public CardBoxs;\r\n\r\n    function _creatBox(\r\n        uint8 _level,\r\n        uint32 _exp,\r\n        uint8 _addition\r\n    ) internal {\r\n        CardBoxs.push(CardBox(_level, _exp, _addition));\r\n    }\r\n\r\n    function creatBox(\r\n        uint8 _level,\r\n        uint32 _exp,\r\n        uint8 _addition\r\n    ) public {\r\n        _creatBox(_level, _exp, _addition);\r\n    }\r\n}\r\n",
+  "sourcePath": "D:/Sol/ntf/contracts/CardBoxConfig.sol",
+  "ast": {
+    "absolutePath": "/D/Sol/ntf/contracts/CardBoxConfig.sol",
+    "exportedSymbols": {
+      "CardBoxConfig": [
+        255
+      ]
+    },
+    "id": 256,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 208,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 255,
+        "linearizedBaseContracts": [
+          255
+        ],
+        "name": "CardBoxConfig",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "CardBoxConfig.CardBox",
+            "id": 215,
+            "members": [
+              {
+                "constant": false,
+                "id": 210,
+                "name": "level",
+                "nodeType": "VariableDeclaration",
+                "scope": 215,
+                "src": "125:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 209,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "125:5:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 212,
+                "name": "exp",
+                "nodeType": "VariableDeclaration",
+                "scope": 215,
+                "src": "162:10:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint32",
+                  "typeString": "uint32"
+                },
+                "typeName": {
+                  "id": 211,
+                  "name": "uint32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "162:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 214,
+                "name": "addition",
+                "nodeType": "VariableDeclaration",
+                "scope": 215,
+                "src": "204:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 213,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "204:5:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "CardBox",
+            "nodeType": "StructDefinition",
+            "scope": 255,
+            "src": "99:136:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 218,
+            "name": "CardBoxs",
+            "nodeType": "VariableDeclaration",
+            "scope": 255,
+            "src": "243:25:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_CardBox_$215_storage_$dyn_storage",
+              "typeString": "struct CardBoxConfig.CardBox[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 216,
+                "name": "CardBox",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 215,
+                "src": "243:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_CardBox_$215_storage_ptr",
+                  "typeString": "struct CardBoxConfig.CardBox"
+                }
+              },
+              "id": 217,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "243:9:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_CardBox_$215_storage_$dyn_storage_ptr",
+                "typeString": "struct CardBoxConfig.CardBox[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 237,
+              "nodeType": "Block",
+              "src": "383:66:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 231,
+                            "name": "_level",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 220,
+                            "src": "416:6:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint8",
+                              "typeString": "uint8"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 232,
+                            "name": "_exp",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 222,
+                            "src": "424:4:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint32",
+                              "typeString": "uint32"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 233,
+                            "name": "_addition",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 224,
+                            "src": "430:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint8",
+                              "typeString": "uint8"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint8",
+                              "typeString": "uint8"
+                            },
+                            {
+                              "typeIdentifier": "t_uint32",
+                              "typeString": "uint32"
+                            },
+                            {
+                              "typeIdentifier": "t_uint8",
+                              "typeString": "uint8"
+                            }
+                          ],
+                          "id": 230,
+                          "name": "CardBox",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 215,
+                          "src": "408:7:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_CardBox_$215_storage_ptr_$",
+                            "typeString": "type(struct CardBoxConfig.CardBox storage pointer)"
+                          }
+                        },
+                        "id": 234,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "408:32:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CardBox_$215_memory",
+                          "typeString": "struct CardBoxConfig.CardBox memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_CardBox_$215_memory",
+                          "typeString": "struct CardBoxConfig.CardBox memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 227,
+                        "name": "CardBoxs",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 218,
+                        "src": "394:8:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_CardBox_$215_storage_$dyn_storage",
+                          "typeString": "struct CardBoxConfig.CardBox storage ref[] storage ref"
+                        }
+                      },
+                      "id": 229,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "394:13:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_CardBox_$215_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct CardBoxConfig.CardBox storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 235,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "394:47:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 236,
+                  "nodeType": "ExpressionStatement",
+                  "src": "394:47:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 238,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_creatBox",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 225,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 220,
+                  "name": "_level",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 238,
+                  "src": "306:12:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 219,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "306:5:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 222,
+                  "name": "_exp",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 238,
+                  "src": "329:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 221,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "329:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 224,
+                  "name": "_addition",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 238,
+                  "src": "351:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 223,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "351:5:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "295:78:1"
+            },
+            "returnParameters": {
+              "id": 226,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "383:0:1"
+            },
+            "scope": 255,
+            "src": "277:172:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 253,
+              "nodeType": "Block",
+              "src": "560:53:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 248,
+                        "name": "_level",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 240,
+                        "src": "581:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 249,
+                        "name": "_exp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 242,
+                        "src": "589:4:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 250,
+                        "name": "_addition",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 244,
+                        "src": "595:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        },
+                        {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        },
+                        {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        }
+                      ],
+                      "id": 247,
+                      "name": "_creatBox",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 238,
+                      "src": "571:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint8_$_t_uint32_$_t_uint8_$returns$__$",
+                        "typeString": "function (uint8,uint32,uint8)"
+                      }
+                    },
+                    "id": 251,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "571:34:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 252,
+                  "nodeType": "ExpressionStatement",
+                  "src": "571:34:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 254,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "creatBox",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 245,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 240,
+                  "name": "_level",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 254,
+                  "src": "485:12:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 239,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "485:5:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 242,
+                  "name": "_exp",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 254,
+                  "src": "508:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 241,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "508:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 244,
+                  "name": "_addition",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 254,
+                  "src": "530:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 243,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "530:5:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "474:78:1"
+            },
+            "returnParameters": {
+              "id": 246,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "560:0:1"
+            },
+            "scope": 255,
+            "src": "457:156:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 256,
+        "src": "69:547:1"
+      }
+    ],
+    "src": "33:585:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Sol/ntf/contracts/CardBoxConfig.sol",
+      "exportedSymbols": {
+        "CardBoxConfig": [
+          255
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 208,
+        "name": "PragmaDirective",
+        "src": "33:32:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            255
+          ],
+          "name": "CardBoxConfig",
+          "scope": 256
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "CardBoxConfig.CardBox",
+              "name": "CardBox",
+              "scope": 255,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "level",
+                  "scope": 215,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint8",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint8",
+                      "type": "uint8"
+                    },
+                    "id": 209,
+                    "name": "ElementaryTypeName",
+                    "src": "125:5:1"
+                  }
+                ],
+                "id": 210,
+                "name": "VariableDeclaration",
+                "src": "125:11:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "exp",
+                  "scope": 215,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint32",
+                      "type": "uint32"
+                    },
+                    "id": 211,
+                    "name": "ElementaryTypeName",
+                    "src": "162:6:1"
+                  }
+                ],
+                "id": 212,
+                "name": "VariableDeclaration",
+                "src": "162:10:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "addition",
+                  "scope": 215,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint8",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint8",
+                      "type": "uint8"
+                    },
+                    "id": 213,
+                    "name": "ElementaryTypeName",
+                    "src": "204:5:1"
+                  }
+                ],
+                "id": 214,
+                "name": "VariableDeclaration",
+                "src": "204:14:1"
+              }
+            ],
+            "id": 215,
+            "name": "StructDefinition",
+            "src": "99:136:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "CardBoxs",
+              "scope": 255,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct CardBoxConfig.CardBox[]",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct CardBoxConfig.CardBox[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "CardBox",
+                      "referencedDeclaration": 215,
+                      "type": "struct CardBoxConfig.CardBox"
+                    },
+                    "id": 216,
+                    "name": "UserDefinedTypeName",
+                    "src": "243:7:1"
+                  }
+                ],
+                "id": 217,
+                "name": "ArrayTypeName",
+                "src": "243:9:1"
+              }
+            ],
+            "id": 218,
+            "name": "VariableDeclaration",
+            "src": "243:25:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "_creatBox",
+              "scope": 255,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_level",
+                      "scope": 238,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 219,
+                        "name": "ElementaryTypeName",
+                        "src": "306:5:1"
+                      }
+                    ],
+                    "id": 220,
+                    "name": "VariableDeclaration",
+                    "src": "306:12:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_exp",
+                      "scope": 238,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 221,
+                        "name": "ElementaryTypeName",
+                        "src": "329:6:1"
+                      }
+                    ],
+                    "id": 222,
+                    "name": "VariableDeclaration",
+                    "src": "329:11:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_addition",
+                      "scope": 238,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 223,
+                        "name": "ElementaryTypeName",
+                        "src": "351:5:1"
+                      }
+                    ],
+                    "id": 224,
+                    "name": "VariableDeclaration",
+                    "src": "351:15:1"
+                  }
+                ],
+                "id": 225,
+                "name": "ParameterList",
+                "src": "295:78:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 226,
+                "name": "ParameterList",
+                "src": "383:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_CardBox_$215_memory",
+                                  "typeString": "struct CardBoxConfig.CardBox memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct CardBoxConfig.CardBox storage ref) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 218,
+                                  "type": "struct CardBoxConfig.CardBox storage ref[] storage ref",
+                                  "value": "CardBoxs"
+                                },
+                                "id": 227,
+                                "name": "Identifier",
+                                "src": "394:8:1"
+                              }
+                            ],
+                            "id": 229,
+                            "name": "MemberAccess",
+                            "src": "394:13:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct CardBoxConfig.CardBox memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint8",
+                                      "typeString": "uint8"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint32",
+                                      "typeString": "uint32"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint8",
+                                      "typeString": "uint8"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 215,
+                                  "type": "type(struct CardBoxConfig.CardBox storage pointer)",
+                                  "value": "CardBox"
+                                },
+                                "id": 230,
+                                "name": "Identifier",
+                                "src": "408:7:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 220,
+                                  "type": "uint8",
+                                  "value": "_level"
+                                },
+                                "id": 231,
+                                "name": "Identifier",
+                                "src": "416:6:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 222,
+                                  "type": "uint32",
+                                  "value": "_exp"
+                                },
+                                "id": 232,
+                                "name": "Identifier",
+                                "src": "424:4:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 224,
+                                  "type": "uint8",
+                                  "value": "_addition"
+                                },
+                                "id": 233,
+                                "name": "Identifier",
+                                "src": "430:9:1"
+                              }
+                            ],
+                            "id": 234,
+                            "name": "FunctionCall",
+                            "src": "408:32:1"
+                          }
+                        ],
+                        "id": 235,
+                        "name": "FunctionCall",
+                        "src": "394:47:1"
+                      }
+                    ],
+                    "id": 236,
+                    "name": "ExpressionStatement",
+                    "src": "394:47:1"
+                  }
+                ],
+                "id": 237,
+                "name": "Block",
+                "src": "383:66:1"
+              }
+            ],
+            "id": 238,
+            "name": "FunctionDefinition",
+            "src": "277:172:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "creatBox",
+              "scope": 255,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_level",
+                      "scope": 254,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 239,
+                        "name": "ElementaryTypeName",
+                        "src": "485:5:1"
+                      }
+                    ],
+                    "id": 240,
+                    "name": "VariableDeclaration",
+                    "src": "485:12:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_exp",
+                      "scope": 254,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 241,
+                        "name": "ElementaryTypeName",
+                        "src": "508:6:1"
+                      }
+                    ],
+                    "id": 242,
+                    "name": "VariableDeclaration",
+                    "src": "508:11:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_addition",
+                      "scope": 254,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 243,
+                        "name": "ElementaryTypeName",
+                        "src": "530:5:1"
+                      }
+                    ],
+                    "id": 244,
+                    "name": "VariableDeclaration",
+                    "src": "530:15:1"
+                  }
+                ],
+                "id": 245,
+                "name": "ParameterList",
+                "src": "474:78:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 246,
+                "name": "ParameterList",
+                "src": "560:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint8",
+                                  "typeString": "uint8"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint32",
+                                  "typeString": "uint32"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint8",
+                                  "typeString": "uint8"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 238,
+                              "type": "function (uint8,uint32,uint8)",
+                              "value": "_creatBox"
+                            },
+                            "id": 247,
+                            "name": "Identifier",
+                            "src": "571:9:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 240,
+                              "type": "uint8",
+                              "value": "_level"
+                            },
+                            "id": 248,
+                            "name": "Identifier",
+                            "src": "581:6:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 242,
+                              "type": "uint32",
+                              "value": "_exp"
+                            },
+                            "id": 249,
+                            "name": "Identifier",
+                            "src": "589:4:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 244,
+                              "type": "uint8",
+                              "value": "_addition"
+                            },
+                            "id": 250,
+                            "name": "Identifier",
+                            "src": "595:9:1"
+                          }
+                        ],
+                        "id": 251,
+                        "name": "FunctionCall",
+                        "src": "571:34:1"
+                      }
+                    ],
+                    "id": 252,
+                    "name": "ExpressionStatement",
+                    "src": "571:34:1"
+                  }
+                ],
+                "id": 253,
+                "name": "Block",
+                "src": "560:53:1"
+              }
+            ],
+            "id": 254,
+            "name": "FunctionDefinition",
+            "src": "457:156:1"
+          }
+        ],
+        "id": 255,
+        "name": "ContractDefinition",
+        "src": "69:547:1"
+      }
+    ],
+    "id": 256,
+    "name": "SourceUnit",
+    "src": "33:585:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-05-31T10:56:48.570Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "contractName": "ManagerConfig",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "name": "members",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"members\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/Sol/ntf/contracts/config/ManagerConfig.sol\":\"ManagerConfig\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Sol/ntf/contracts/config/ManagerConfig.sol\":{\"keccak256\":\"0x58902a9dc97e1d50414a550588ead58e2cb3680323d1c65626608469609f1681\",\"urls\":[\"bzz-raw://626824f4f47eadefdc90fc9ca22e331c33bd08adde2350eed85a9f9663a552fc\",\"dweb:/ipfs/QmQicWTocdBkTBgxKFK8KwAXZXVb3qWGyvTXEPXdmVCxAS\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506101a9806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80636957a0b214610030575b600080fd5b6100e96004803603602081101561004657600080fd5b810190808035906020019064010000000081111561006357600080fd5b82018360208201111561007557600080fd5b8035906020019184600183028401116401000000008311171561009757600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061012b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000818051602081018201805184825260208301602085012081835280955050505050506000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a723158208a7a8e0352906c211517328ad8a8a54785c2417688b2732c6ca1a7aae21df0dd64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80636957a0b214610030575b600080fd5b6100e96004803603602081101561004657600080fd5b810190808035906020019064010000000081111561006357600080fd5b82018360208201111561007557600080fd5b8035906020019184600183028401116401000000008311171561009757600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061012b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000818051602081018201805184825260208301602085012081835280955050505050506000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a723158208a7a8e0352906c211517328ad8a8a54785c2417688b2732c6ca1a7aae21df0dd64736f6c63430005100032",
+  "sourceMap": "69:114:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:114:4;;;;;;;",
+  "deployedSourceMap": "69:114:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:114:4;;;;;;;;;;;;;;;;;;;99:41;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;99:41:4;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;99:41:4;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;99:41:4;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;99:41:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;99:41:4;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;28:7:-1;22:14;169:4;160:7;156:18;147:7;143:32;204:13;198:20;246:8;231:13;224:31;316:4;307:7;303:18;296:4;287:7;283:18;273:49;350:9;335:13;328:32;378:4;366:16;;0:388;;;;99:41:4;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract ManagerConfig {\r\n    mapping(string => address) public members; //不同功能官方账号地址映射\r\n}\r\n",
+  "sourcePath": "D:\\Sol\\ntf\\contracts\\config\\ManagerConfig.sol",
+  "ast": {
+    "absolutePath": "/D/Sol/ntf/contracts/config/ManagerConfig.sol",
+    "exportedSymbols": {
+      "ManagerConfig": [
+        930
+      ]
+    },
+    "id": 931,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 925,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 930,
+        "linearizedBaseContracts": [
+          930
+        ],
+        "name": "ManagerConfig",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 929,
+            "name": "members",
+            "nodeType": "VariableDeclaration",
+            "scope": 930,
+            "src": "99:41:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_string_memory_$_t_address_$",
+              "typeString": "mapping(string => address)"
+            },
+            "typeName": {
+              "id": 928,
+              "keyType": {
+                "id": 926,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "107:6:4",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "99:26:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_string_memory_$_t_address_$",
+                "typeString": "mapping(string => address)"
+              },
+              "valueType": {
+                "id": 927,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "117:7:4",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 931,
+        "src": "69:114:4"
+      }
+    ],
+    "src": "33:152:4"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Sol/ntf/contracts/config/ManagerConfig.sol",
+      "exportedSymbols": {
+        "ManagerConfig": [
+          930
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 925,
+        "name": "PragmaDirective",
+        "src": "33:32:4"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            930
+          ],
+          "name": "ManagerConfig",
+          "scope": 931
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "members",
+              "scope": 930,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(string => address)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(string => address)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 926,
+                    "name": "ElementaryTypeName",
+                    "src": "107:6:4"
+                  },
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 927,
+                    "name": "ElementaryTypeName",
+                    "src": "117:7:4"
+                  }
+                ],
+                "id": 928,
+                "name": "Mapping",
+                "src": "99:26:4"
+              }
+            ],
+            "id": 929,
+            "name": "VariableDeclaration",
+            "src": "99:41:4"
+          }
+        ],
+        "id": 930,
+        "name": "ContractDefinition",
+        "src": "69:114:4"
+      }
+    ],
+    "id": 931,
+    "name": "SourceUnit",
+    "src": "33:152:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-05-31T10:58:24.200Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

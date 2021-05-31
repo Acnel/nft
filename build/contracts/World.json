@@ -1,0 +1,758 @@
+{
+  "contractName": "World",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getWorldTotalFighting",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getWorldCardTotalCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getWorldCardTotalCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getWorldTotalFighting\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/Sol/ntf/contracts/World.sol\":\"World\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Sol/ntf/contracts/World.sol\":{\"keccak256\":\"0xd8260bd3b95b5da6a44b556179e4dd7c725a29c5ba8284a33d3f4c0786c906fe\",\"urls\":[\"bzz-raw://da9d594c841db228ffed56feb53be308f5d00c2d41068d92f9129a3e6086c17e\",\"dweb:/ipfs/QmQyPFb8ZYz31oC4A9uJMnGG7fB3jgyVekzz4JhQy2U3YG\"]}},\"version\":1}",
+  "bytecode": "0x6080604052600080556000600155600060025534801561001e57600080fd5b5060b78061002d6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80635927873e14603757806372362278146053575b600080fd5b603d606f565b6040518082815260200191505060405180910390f35b60596079565b6040518082815260200191505060405180910390f35b6000600154905090565b6000805490509056fea265627a7a723158209294a4d677cc7f10d7d7af49db3bcdc4d6c4fd7d29fdc6be82018b593371613d64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80635927873e14603757806372362278146053575b600080fd5b603d606f565b6040518082815260200191505060405180910390f35b60596079565b6040518082815260200191505060405180910390f35b6000600154905090565b6000805490509056fea265627a7a723158209294a4d677cc7f10d7d7af49db3bcdc4d6c4fd7d29fdc6be82018b593371613d64736f6c63430005100032",
+  "sourceMap": "69:469:6:-;;;120:1;91:30;;179:1;149:31;;233:1;211:23;;69:469;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:469:6;;;;;;;",
+  "deployedSourceMap": "69:469:6:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:469:6;;;;;;;;;;;;;;;;;;;;;;;;426:109;;;:::i;:::-;;;;;;;;;;;;;;;;;;;276:107;;;:::i;:::-;;;;;;;;;;;;;;;;;;;426:109;481:7;508:19;;501:26;;426:109;:::o;276:107::-;330:7;357:18;;350:25;;276:107;:::o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract World {\r\n    uint256 worldTotalFighting = 0; //全服总战斗力\r\n    uint256 worldCardTotalCount = 0; //全服卡牌总数量\r\n    uint256 totalVolume = 0;\r\n\r\n    // 获取全部总战斗力\r\n    function getWorldTotalFighting() public view returns (uint256) {\r\n        return worldTotalFighting;\r\n    }\r\n\r\n    //获取全部卡牌总数量\r\n    function getWorldCardTotalCount() public view returns (uint256) {\r\n        return worldCardTotalCount;\r\n    }\r\n}\r\n",
+  "sourcePath": "D:/Sol/ntf/contracts/World.sol",
+  "ast": {
+    "absolutePath": "/D/Sol/ntf/contracts/World.sol",
+    "exportedSymbols": {
+      "World": [
+        1916
+      ]
+    },
+    "id": 1917,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1890,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:6"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1916,
+        "linearizedBaseContracts": [
+          1916
+        ],
+        "name": "World",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1893,
+            "name": "worldTotalFighting",
+            "nodeType": "VariableDeclaration",
+            "scope": 1916,
+            "src": "91:30:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1891,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "91:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 1892,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "120:1:6",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1896,
+            "name": "worldCardTotalCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 1916,
+            "src": "149:31:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1894,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "149:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 1895,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "179:1:6",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1899,
+            "name": "totalVolume",
+            "nodeType": "VariableDeclaration",
+            "scope": 1916,
+            "src": "211:23:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1897,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "211:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 1898,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "233:1:6",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 1906,
+              "nodeType": "Block",
+              "src": "339:44:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1904,
+                    "name": "worldTotalFighting",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 1893,
+                    "src": "357:18:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 1903,
+                  "id": 1905,
+                  "nodeType": "Return",
+                  "src": "350:25:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1907,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getWorldTotalFighting",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1900,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "306:2:6"
+            },
+            "returnParameters": {
+              "id": 1903,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1902,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1907,
+                  "src": "330:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1901,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "330:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "329:9:6"
+            },
+            "scope": 1916,
+            "src": "276:107:6",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1914,
+              "nodeType": "Block",
+              "src": "490:45:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1912,
+                    "name": "worldCardTotalCount",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 1896,
+                    "src": "508:19:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 1911,
+                  "id": 1913,
+                  "nodeType": "Return",
+                  "src": "501:26:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1915,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getWorldCardTotalCount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1908,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "457:2:6"
+            },
+            "returnParameters": {
+              "id": 1911,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1910,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1915,
+                  "src": "481:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1909,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "481:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "480:9:6"
+            },
+            "scope": 1916,
+            "src": "426:109:6",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1917,
+        "src": "69:469:6"
+      }
+    ],
+    "src": "33:507:6"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/D/Sol/ntf/contracts/World.sol",
+      "exportedSymbols": {
+        "World": [
+          1916
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1890,
+        "name": "PragmaDirective",
+        "src": "33:32:6"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            1916
+          ],
+          "name": "World",
+          "scope": 1917
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "worldTotalFighting",
+              "scope": 1916,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 1891,
+                "name": "ElementaryTypeName",
+                "src": "91:7:6"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 1892,
+                "name": "Literal",
+                "src": "120:1:6"
+              }
+            ],
+            "id": 1893,
+            "name": "VariableDeclaration",
+            "src": "91:30:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "worldCardTotalCount",
+              "scope": 1916,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 1894,
+                "name": "ElementaryTypeName",
+                "src": "149:7:6"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 1895,
+                "name": "Literal",
+                "src": "179:1:6"
+              }
+            ],
+            "id": 1896,
+            "name": "VariableDeclaration",
+            "src": "149:31:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "totalVolume",
+              "scope": 1916,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 1897,
+                "name": "ElementaryTypeName",
+                "src": "211:7:6"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 1898,
+                "name": "Literal",
+                "src": "233:1:6"
+              }
+            ],
+            "id": 1899,
+            "name": "VariableDeclaration",
+            "src": "211:23:6"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getWorldTotalFighting",
+              "scope": 1916,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1900,
+                "name": "ParameterList",
+                "src": "306:2:6"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 1907,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1901,
+                        "name": "ElementaryTypeName",
+                        "src": "330:7:6"
+                      }
+                    ],
+                    "id": 1902,
+                    "name": "VariableDeclaration",
+                    "src": "330:7:6"
+                  }
+                ],
+                "id": 1903,
+                "name": "ParameterList",
+                "src": "329:9:6"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 1903
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 1893,
+                          "type": "uint256",
+                          "value": "worldTotalFighting"
+                        },
+                        "id": 1904,
+                        "name": "Identifier",
+                        "src": "357:18:6"
+                      }
+                    ],
+                    "id": 1905,
+                    "name": "Return",
+                    "src": "350:25:6"
+                  }
+                ],
+                "id": 1906,
+                "name": "Block",
+                "src": "339:44:6"
+              }
+            ],
+            "id": 1907,
+            "name": "FunctionDefinition",
+            "src": "276:107:6"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getWorldCardTotalCount",
+              "scope": 1916,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1908,
+                "name": "ParameterList",
+                "src": "457:2:6"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 1915,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1909,
+                        "name": "ElementaryTypeName",
+                        "src": "481:7:6"
+                      }
+                    ],
+                    "id": 1910,
+                    "name": "VariableDeclaration",
+                    "src": "481:7:6"
+                  }
+                ],
+                "id": 1911,
+                "name": "ParameterList",
+                "src": "480:9:6"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 1911
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 1896,
+                          "type": "uint256",
+                          "value": "worldCardTotalCount"
+                        },
+                        "id": 1912,
+                        "name": "Identifier",
+                        "src": "508:19:6"
+                      }
+                    ],
+                    "id": 1913,
+                    "name": "Return",
+                    "src": "501:26:6"
+                  }
+                ],
+                "id": 1914,
+                "name": "Block",
+                "src": "490:45:6"
+              }
+            ],
+            "id": 1915,
+            "name": "FunctionDefinition",
+            "src": "426:109:6"
+          }
+        ],
+        "id": 1916,
+        "name": "ContractDefinition",
+        "src": "69:469:6"
+      }
+    ],
+    "id": 1917,
+    "name": "SourceUnit",
+    "src": "33:507:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-05-31T10:56:48.591Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
